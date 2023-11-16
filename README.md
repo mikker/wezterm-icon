@@ -19,7 +19,9 @@ $ make install
 - Delete the icon cache and restart `Dock`:
 
 ```bash
-$ rm /var/folders/*/*/*/com.apple.dock.iconcache; killall Dock
+$ rm /var/folders/*/*/*/com.apple.dock.iconcache
+$ rm -r /var/folders/*/*/*/com.apple.iconservices*
+$ killall Dock
 ```
 
 ### Building
